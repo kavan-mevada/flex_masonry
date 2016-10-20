@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      * {
+        font-family: sans-serif;
+      }
+
+      .container {
+        width: 100%;
+        position: relative;
+        max-width: 864px;
+        margin-top: 96px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .topbar {
+        position: relative;
+        right: 0;
+        left: 0;
+        padding: 10px 30px;
+        margin: 0;
+        list-style: none;
+        text-align: right;
+      }
+      .topbar a {
+        color: #212121;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      a {
+        color: #212121;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      h1, h2 {
+        display: block;
+        font-weight: bold;
+      }
+
+      code {
+          padding: 20px;
+          background: #f4f6f8;
+          display: block;
+          overflow: hidden;
+          font-size: 14px;
+          font-family: Menlo, Monaco, 'Lucida Console', monospace, serif;
+      }
+
+      .footerpage {
+          display: block;
+          position: relative;
+          padding: 0;
+          list-style: none;
+          margin-top: 100px;
+      }
+      .footerpage > li {
+          display: inline-block;
+          margin-right: 20px;
+      }
+
+      a img {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <ul class="topbar">
+      <li>
+        <a href="https://github.com/kavanmevada/flex_masonry">GitHub</a>
+      </li>
+    </ul>
+    <section class="container">
+      <p>
+        <img src="logo.png" alt="Minigrid" height="80px">
+      </p>
+      <h1>FlexMasonry</h1>
+      <p>Responsive Masonry Grid and Lightweight, Pure Javascript.</p>
+      <p>Minimal 0.79kb zero dependency cascading grid layout without pain.</p>
+      <br>
+      <!-- Place this tag where you want the button to render. -->
+      <a class="github-button" href="https://github.com/kavanmevada/flex_masonry" data-icon="octicon-star" data-style="mega" data-count-href="/kavanmevada/flex_masonry/stargazers" data-count-api="/repos/kavanmevada/flex_masonry#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star kavanmevada/flex_masonry on GitHub">Star</a>
+      <br>
+      <br>
+      <h2>Demo</h2>
+      <p>There's a simple example <a href="https://kavanmevada.github.io/flex_masonry/">Example 1</a>.</p>
+      <h2>HTML :</h2>
+      <pre>
+      <code>
+&lt;div class="grid masonry"&gt;  &lt;!-- masonry class optional                     --&gt;
+  &lt;div&gt;Element_1&lt;/div&gt;      &lt;!-- relate with below flex_masonry(".masonry") --&gt;
+  &lt;div&gt;Element_2&lt;/div&gt;
+  &lt;div&gt;Element_3&lt;/div&gt;
+  &lt;div&gt;Element_4&lt;/div&gt;
+  &lt;div&gt;Element_5&lt;/div&gt;
+  &lt;div&gt;Element_6&lt;/div&gt;
+  &lt;div&gt;Element_7&lt;/div&gt;
+&lt;/div&gt;
+      </code>
+      </pre>
+      <h2>CSS :</h2>
+      <pre>
+      <code>
+.grid {
+  width: 80%;
+  position: relative; /* Nessesory */
+  margin: 0 auto; /* (Optional) for cotanier centering */
+}
+
+.grid > div {
+  width: 240px;           /* This is the place you can change with in % or px */
+  transition: all 0.5s;   /* (Optional) for animations */
+}
+      </code>
+      </pre>
+      <h2>JavaScript :</h2>
+      <pre>
+      <code>
+&lt;script src="flex_masonry.2.js"&gt;&lt;/script&gt;
+  &lt;script&gt;
+  flex_masonry(".masonry");
+&lt;/script&gt;
+      </code>
+    </pre>
+    <br>
+    <h2>Questions</h2>
+    <p>Hit me on Twitter.</p>
+    <iframe
+      src="https://platform.twitter.com/widgets/tweet_button.html?size=l&url=https%3A%2F%2Fdev.twitter.com%2Fweb%2Ftweet-button&via=twitterdev&related=twitterapi%2Ctwitter&text=custom%20share%20text&hashtags=example%2Cdemo"
+      title="flex_masonry"
+      style="border: 0; overflow: hidden;">
+      <a class="twitter-share-button"
+        href="https://twitter.com/share"
+        data-size="large"
+        data-url="https://dev.twitter.com/web/tweet-button"
+        data-via="kavanmevada"
+        data-related="twitterapi,twitter"
+        data-hashtags="#javascript"
+        data-text="Your Question">
+      Tweet
+      </a>
+    </iframe>
+
+      <ul class="footerpage">
+        <li><a >FlexMasonry</a> v2.0.0</li>
+        <li><p>© 2016 Kavan Mevada.</p></li>
+        <li><a href="https://github.com/kavanmevada/flex_masonry">GitHub</a></li>
+        <li><a href="https://js.org"><img src="https://logo.js.org/dark_horz.png" width="55"></a></li>
+      </ul>
+    </section>
+
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </body>
+</html>
