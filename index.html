@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+
+<title>basic</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.masonry {
+  display: block;
+  width: 80%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.grid > div {
+  float: left;
+  width: 25%;
+  transition: all 0.5s;
+}
+
+.grid-item--a { height:  80px;background-color:yellow;}
+.grid-item--b { height: 140px;background-color:pink;}
+.grid-item--c { height: 300px;background-color:orange;}
+
+</style>
+
+</head>
+<body>
+
+  <h1 style="text-align:center;">basic</h1>
+
+<div class="grid masonry">
+  <div class="grid-item grid-item--b">1</div>
+  <div class="grid-item grid-item--a">2</div>
+  <div class="grid-item grid-item--c">3</div>
+  <div class="grid-item grid-item--a">4</div>
+  <div class="grid-item grid-item--a">5</div>
+  <div class="grid-item grid-item--b">6</div>
+  <div class="grid-item grid-item--c">7</div>
+  <div class="grid-item grid-item--b">8</div>
+  <div class="grid-item grid-item--a">9</div>
+  <div class="grid-item grid-item--c">10</div>
+  <div class="grid-item grid-item--a">11</div>
+  <div class="grid-item grid-item--a">12</div>
+  <div class="grid-item grid-item--b">13</div>
+  <div class="grid-item grid-item--c">14</div>
+  <div class="grid-item grid-item--b">15</div>
+  <div class="grid-item grid-item--a">16</div>
+</div>
+<script src="flex_masonry.2.js"></script>
+<script>
+flex_masonry(".masonry");
+</script>
+</body>
+</html>
