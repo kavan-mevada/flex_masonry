@@ -48,8 +48,4 @@ flex_masonry = function(flex_ele) {
   window.addEventListener('resize', function() {
     flex_magic.render();
   });
-  window.onclick = function(event) {
-    event.preventDefault();
-    flex_magic.destroy();
-  };
 };
