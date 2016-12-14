@@ -20,6 +20,10 @@ flex_masonry = function(flex_ele) {
         child_e[i].style.position = 'absolute';
         child_e[i].style.top = column_matrix[addToCol] + 'px';
         child_e[i].style.left = leftPos + '%';
+        if (child_e[i].getBoundingClientRect()
+          .height <= 0) {
+            column_matrix[addToCol] = column_matrix[addToCol] - gutter_h;
+        }
         column_matrix[addToCol] = column_matrix[addToCol] + (child_e[i].getBoundingClientRect()
           .height) + gutter_h;
       }
